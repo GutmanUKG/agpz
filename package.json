@@ -1,0 +1,44 @@
+{
+  "name": "NGK",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vladimir Gutman",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.21.5",
+    "@fancyapps/ui": "^5.0.17",
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.3.0-alpha3",
+    "cssnano": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.0.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "imagemin-webp": "^6.0.1",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-animation": "^0.0.12",
+    "postcss-calc": "^9.0.1",
+    "postcss-nested": "^6.0.1",
+    "postcss-sort-media-queries": "^5.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-svg-sprite": "^2.0.3",
+    "imagemin": "^7.0.1",
+    "imagemin-jpeg-recompress": "^7.1.0",
+    "postcss-bem": "^0.4.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-font-magician": "^3.0.0",
+    "postcss-import": "^15.1.0",
+    "postcss-mixins": "^9.0.4",
+    "postcss-preset-env": "^8.3.2"
+  }
+}
