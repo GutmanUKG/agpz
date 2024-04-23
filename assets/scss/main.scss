@@ -24,6 +24,7 @@ html {
   z-index: 9999;
   cursor: pointer;
 }
+
 body{
   font-family: var(--font-family);
 }
@@ -376,3 +377,15 @@ footer{
     margin-top: 40px;
   }
 }
+
+#navbarText.active{
+  position: fixed;
+  top: 150px;
+  right: 0;
+  background: #fff;
+  width: 50%;
+  text-align: right;
+  z-index: 99999;
+  height: 100vh;
+}
+

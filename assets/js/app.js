@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
             },
             600:{
-                items:3,
+                items:2,
             },
             1000:{
                 items:3,
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     //news list
     let newsList = $('.news-list').owlCarousel({
-        loop:true,
+        loop:false,
         margin:10,
         responsiveClass:true,
         dots: true,
@@ -62,5 +62,22 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //news list
     document.querySelector('#arrow-top').onclick = () => {
         window.scrollTo(pageYOffset, 0);
+    }
+
+
+    const burgerBtn = document.querySelector('.navbar-toggler'),
+        navBarCollapse = document.querySelector('#navbarText');
+    burgerBtn.addEventListener('click', (e)=>{
+        e.preventDefault();
+        navBarCollapse.classList.toggle('active')
+        navBarCollapse.classList.toggle('collapse')
+    })
+    if(document.body.clientWidth < 991){
+        const dropDownMenuItems = document.querySelectorAll('.dropdown-toggle')
+        dropDownMenuItems.forEach((i)=>{
+            i.addEventListener('click', (e)=>{
+                e.preventDefault()
+            })
+        })
     }
 });

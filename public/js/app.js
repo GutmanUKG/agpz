@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         items: 1
       },
       600: {
-        items: 3
+        items: 2
       },
       1000: {
         items: 3,
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //news list
   var newsList = $('.news-list').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 10,
     responsiveClass: true,
     dots: true,
@@ -61,5 +61,20 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#arrow-top').onclick = function () {
     window.scrollTo(pageYOffset, 0);
   };
+  var burgerBtn = document.querySelector('.navbar-toggler'),
+    navBarCollapse = document.querySelector('#navbarText');
+  burgerBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    navBarCollapse.classList.toggle('active');
+    navBarCollapse.classList.toggle('collapse');
+  });
+  if (document.body.clientWidth < 991) {
+    var dropDownMenuItems = document.querySelectorAll('.dropdown-toggle');
+    dropDownMenuItems.forEach(function (i) {
+      i.addEventListener('click', function (e) {
+        e.preventDefault();
+      });
+    });
+  }
 });
 //# sourceMappingURL=app.js.map
